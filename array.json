@@ -1,0 +1,10 @@
+[
+  { "id": 0, "producto": "pejerrey", "especie": "pez oseo", "espinas": true, "precio": 600, "importado": false, "pais": "Argentina" },
+  { "id": 1, "producto": "pez elefante", "especie": "pez cartilaginoso", "espinas": false, "precio": 1000, "importado": false, "pais": "Argentina" },
+  { "id": 2, "producto": "dorado", "especie": "pez oseo", "espinas": true, "precio": 1200, "importado": false, "pais": "Argentina" },
+  { "id": 3, "producto": "bezugo", "especie": "pez oseo", "espinas": true, "precio": 400, "importado": false, "pais": "Argentina" },
+  { "id": 4, "producto": "bacalao", "especie": "pez oseo", "espinas": true, "precio": 4200, "importado": true, "pais": "Noruega" },
+  { "id": 5, "producto": "mejillon", "especie": "molusco", "espinas": false, "precio": 800, "importado": false, "pais": "Argentina" },
+  { "id": 6, "producto": "ostras", "especie": "molusco", "espinas": false, "precio": 2800, "importado": true, "pais": "España" },
+  { "id": 7, "producto": "salmon", "especie": "pez oseo", "espinas": true, "precio": 1200, "importado": true, "pais": "chile" }
+]

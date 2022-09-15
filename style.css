@@ -1,0 +1,27 @@
+#bodyContainer {
+    background-color: aquamarine;
+  }
+  
+  #cabecera {
+    background-image: url(./imagenes/barco2.jpg);
+    width: 100%;
+    height: 250px;
+  }
+  
+  .lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    color: blue;
+  }
+  
+  .lista a {
+    color: rgb(16, 150, 116);
+    font-size: xx-large;
+  }
+  
+  #form {
+    margin-top: 100px;
+    margin-left: 150px;
+  }
