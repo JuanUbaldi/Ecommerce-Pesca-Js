@@ -1,34 +1,20 @@
-/*DESESTRUCTURACION DE ARRAYS*/
-const [merlusa, , , corvina] = productos;
+const btn = document.getElementById('button');
 
-function renderOfertas1() {
-  let html1 = "";
-  html1 = `${html1}<div  style = "border:blue 3px  solid; width:300px; padding:15px" > <p>  producto:${
-    merlusa.producto
-  } 20% de descuento!!</p> <p>especie:${
-    merlusa.especie
-  }</p> <p>¿tiene espinas?:${merlusa.espinas}</p> <p>precio:${
-    merlusa.precio * 0.8
-  }</p> <p>¿importado?:${merlusa.importado}</p> <p>origen:${
-    merlusa.pais
-  }</p> <p>id:${merlusa.id} </p> </div>`;
-  document.getElementById("ofertas1").innerHTML = html1;
-}
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
 
-renderOfertas1();
+   btn.value = 'Sending...';
 
-function renderOfertas2() {
-  let html2 = "";
-  html2 = `${html2}<div  style = "border:blue 3px  solid; width:300px; padding:15px" > <p>  producto:${
-    corvina.producto
-  } 40% de descuento!!</p> <p>especie:${
-    corvina.especie
-  }</p> <p>¿tiene espinas?:${merlusa.espinas}</p> <p>precio:${parseInt(
-    corvina.precio * 0.6
-  )}</p> <p>¿importado?:${corvina.importado}</p> <p>origen:${
-    corvina.pais
-  }</p> <p>id:${corvina.id} </p> </div>`;
-  document.getElementById("ofertas2").innerHTML = html2;
-}
+   const serviceID = 'default_service';
+   const templateID = 'template_aqjhk98';
 
-renderOfertas2();
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});

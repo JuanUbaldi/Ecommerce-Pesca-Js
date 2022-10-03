@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <header id="cabecera">
+    <img class="timon" src="./imagenes/timon.png" alt="" />
+
+    <h1 class="tituloPrincipal">Pescaderia y marisqueria "Santa cecilia"</h1>
+
+    <nav id="nav">
+      <ul class="lista">
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="contactos.html">Contactanos</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="recetas.html">Recetas</a></li>
+        <li><a href="embarcacion.html">Embarcaciones</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body id="bodyContainer">
+    <main>
+      <h2 class="h2Embarcacion">Salidas de pesca a altamar</h2>
+      <div id="embarcaciones">
+       <p class="pEmbarcaciones1">
+          Diariamente parten desde el puerto Quequen , lanchas pesqueras con el fin de realizar excursiones de pesca y brindarles la mejor experiencia posible en este arte, de la mano de personal
+          idoneo, los elementos de seguridad necesarios, y las herramientas para hacer de tu dia de pesca un recuerdo inolvidable Realizamos turnos de tres horas, de los cuales 45 minutos se destinan
+          a la navegacion a destino (tanto ida como regreso)
+        </p>
+        <img class="imgEmbarcaciones1" src="./imagenes/pescaEmbarcado1.jpg" alt="" width="400px" height="300px" />
+     
+        <p class="pEmbarcaciones2">
+          Disponemos de un botiquin con insumos medicos para afrontar cualquier situacion que produce la navegacionn, asi como cualquier otro imprevisto en la salud de los tripulantes. Brindamos
+          ademas un pequeños lunch comprendido por un snack y una bebida en la mitad del paseo
+        </p>
+        <img class="imgEmbarcaciones2" src="./imagenes/pescaEmbarcado2.jpeg" alt="" width="400px" height="300px" />
+     
+    
+        <p class="pEmbarcaciones3">
+          Te brindamos todos los elementos tanto para el armado de lineas, como lineas prediseñadas, asi como las cañas los reeles y la carnada acorde para la profundidad y el tipo de pesca que se
+          manejan mar adentro
+        </p>
+        <img class="imgEmbarcaciones3" src="./imagenes/pescaEmbarcado3.jpeg" alt="" width="600px" height="300px" />
+      
+      </div>
+      <div class="promocion">
+      <h5 class="h5Emb">El turno tiene un costo de 15000$. No te olvides de señalar acontinuacion el turno que queres escoger:</h5>
+
+      <button class="botonEmb" onclick="seleccionar()">REALIZA TU RESERVA HACIENDO CLICK!!</button>
+    </div>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/luxon@2.3.0/build/global/luxon.min.js"></script>
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="main.js"></script>
+      <script src="main1.js"></script>
+      <script src="main2.js"></script>
+    </main>
+  </body>
+  <footer id="footer">
+    <div class="h5Footer">
+      <h5>contactate con nosotros</h5>
+      <h5>email: ubaldijuan@gmail.com</h5>
+      <h5>telefono:2213629287</h5>
+    </div>
+    <ul>
+      <li>
+        <a href="https://es-la.facebook.com/" target="_blank"><img src="./imagenes/facebook.png" alt="" /></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/" target="_blank"><img src="./imagenes/instagram.png" alt="" /></a>
+      </li>
+    </ul>
+  </footer>
+</html>

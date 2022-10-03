@@ -1,27 +1,427 @@
 #bodyContainer {
-    background-color: aquamarine;
+  background-color: rgb(242, 228, 208);
+}
+
+#cabecera {
+  background-color: rgb(90, 11, 11);
+  display: block;
+  margin-top: 0px;
+}
+
+.tituloPrincipal {
+  display: inline;
+  color: rgb(251, 216, 122);
+}
+.timon {
+  display: inline;
+  margin-left: 20%;
+  width: 100px;
+  height: 100px;
+}
+
+.lista {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  padding-bottom: 50px;
+  color: azure;
+}
+.lista a {
+  text-decoration: none;
+  color: azure;
+  font-size: large;
+}
+
+.pescadosMariscos {
+  margin: 100px;
+  display: inline;
+}
+.comidas {
+  margin: 100px;
+  display: inline;
+}
+.platito {
+  display: inline;
+}
+.carrousel1 {
+  margin-top: 100px;
+}
+
+.h3Presentacion {
+  padding-top: 100px;
+  color: rgb(0, 0, 0);
+}
+
+.h3Presentacion {
+  text-align: center;
+}
+
+.presentacion h4 {
+  margin-top: 100px;
+}
+
+.presentacion {
+  background-image: url(./imagenes/mainInicio.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+
+  grid-template-areas:
+    'pescados dibuPescados  '
+    'dibuMariscos   mariscos'
+    ' platos  dibuPlatos    '
+    'dibujoExcursiones excursiones';
+}
+.pescados {
+  grid-area: pescados;
+}
+.dibuPescados {
+  grid-area: dibuPescados;
+}
+.mariscos {
+  grid-area: mariscos;
+}
+.dibuMariscos {
+  grid-area: dibuMariscos;
+}
+.platos {
+  grid-area: platos;
+}
+.dibuPlatos {
+  grid-area: dibuPlatos;
+}
+.excursiones {
+  grid-area: excursiones;
+}
+.dibujoExcursiones {
+  grid-area: dibujoExcursiones;
+}
+
+.h2Embarcacion {
+  text-align: center;
+  margin: 100px;
+}
+
+#embarcaciones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    'imgEmbarcaciones1 pEmbarcaciones1  '
+    ' pEmbarcaciones2   imgEmbarcaciones2'
+    'imgEmbarcaciones3 pEmbarcaciones3    ';
+}
+.imgEmbarcaciones1 {
+  grid-area: imgEmbarcaciones1;
+}
+.imgEmbarcaciones2 {
+  grid-area: imgEmbarcaciones2;
+}
+.imgEmbarcaciones3 {
+  grid-area: imgEmbarcaciones3;
+}
+.pEmbarcaciones1 {
+  grid-area: pEmbarcaciones1;
+}
+.pEmbarcaciones2 {
+  grid-area: pEmbarcaciones2;
+}
+.pEmbarcaciones3 {
+  grid-area: pEmbarcaciones3;
+}
+
+.h5Emb {
+  text-align: center;
+  margin: 50px;
+}
+
+.botonEmb {
+  border-radius: 30px;
+  border-color: rgb(255, 149, 0);
+  margin-left: 550px;
+  margin-bottom: 100px;
+}
+
+.salpiconIngredientes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.langostinosIngredientes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.berberechosIngredientes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.berberechosIngredientes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.cremaIngredientes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.salpicon {
+  margin: 100px;
+}
+
+.langostinosHorno {
+  margin: 100px;
+}
+
+.crema {
+  margin: 100px;
+}
+
+.centollon {
+  margin: 100px;
+}
+
+.berberechos {
+  margin: 100px;
+}
+
+.productos .slide img {
+  width: 50%;
+  height: 500px;
+  margin-left: 25%;
+}
+
+.listado {
+  margin: 100px;
+  text-align: center;
+  color: aliceblue;
+  background-color: rgb(90, 11, 11);
+}
+.botonFinalizar {
+  width: 100px;
+  height: 50px;
+  border-radius: 20px;
+  color: orange;
+  margin-left: 50%;
+  margin-bottom: 50px;
+}
+
+#form {
+  margin-top: 150px;
+  width: 25%;
+  border: solid orange 2px;
+  margin: auto;
+  padding: 20px;
+}
+#form input {
+  margin: 10px;
+}
+#botonForm {
+  background-color: orange;
+  color: white;
+  width: 40%;
+}
+#botonForm:hover {
+  background-color: #6c39ec;
+}
+
+.textarea {
+  background-image: url(./imagenes/formDibujo.png);
+  background-position: center;
+
+  background-repeat: no-repeat;
+}
+
+#footer {
+  margin-top: 50px;
+  background-color: brown;
+}
+#footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+.h5Footer {
+  text-align: center;
+}
+
+.star {
+  width: 70px;
+  height: 70px;
+  clip-path: url(#star-clip);
+}
+
+#rating {
+  display: flex;
+}
+
+@media screen and (max-width: 480px) and (min-width: 1px) {
+  .timon{
+    margin-left: 40%;
   }
-  
-  #cabecera {
-    background-image: url(./imagenes/barco2.jpg);
-    width: 100%;
-    height: 250px;
-  }
-  
   .lista {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-    color: blue;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .lista a {
-    color: rgb(16, 150, 116);
-    font-size: xx-large;
+  .tituloPrincipal {
+    display: block;
+    text-align: center;
   }
-  
+  .presentacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    grid-template-areas:
+      'pescados dibuPescados  '
+      'dibuMariscos   mariscos'
+      ' platos  dibuPlatos    '
+      'dibujoExcursiones excursiones';
+  }
+  .pescados {
+    padding-bottom: 10px;
+    grid-area: pescados;
+  }
+  .dibuPescados {
+    margin-top: 0px;
+    grid-area: dibuPescados;
+  }
+  .mariscos {
+    margin-top: 10px;
+    grid-area: mariscos;
+  }
+  .dibuMariscos {
+    margin-top: 10px;
+    grid-area: dibuMariscos;
+  }
+  .platos {
+    margin-top: 10px;
+    grid-area: platos;
+  }
+  .dibuPlatos {
+    margin-top: 10px;
+    grid-area: dibuPlatos;
+  }
+  .excursiones {
+    margin-top: 10px;
+    grid-area: excursiones;
+  }
+  .dibujoExcursiones {
+    margin-top: 10px;
+    grid-area: dibujoExcursiones;
+  }
+
+  .dibuPlatos,
+  .dibuPescados,
+  .dibuMariscos,
+  .dibujoExcursiones {
+    height: 75px;
+    width: 100px;
+  }
+
   #form {
-    margin-top: 100px;
-    margin-left: 150px;
+    margin: 50px;
+    padding: 40px;
+    width: 80%;
   }
+  #form input {
+    width: 100%;
+  }
+  #form textarea {
+    width: 100%;
+  }
+  #form #botonForm {
+    width: 50%;
+  }
+  .productos .slide img {
+    width: 100%;
+    height: 300px;
+    margin-left: 0%;
+  }
+  #products {
+    width: 100%;
+  }
+  .salpiconIngredientes {
+    display: flex;
+    flex-direction: column;
+  }
+  .langostinosIngredientes {
+    display: flex;
+    flex-direction: column;
+  }
+  .cremaIngredientes {
+    display: flex;
+    flex-direction: column;
+  }
+  .cremaIngredientes {
+    display: flex;
+    flex-direction: column;
+  }
+  .berberechosIngredientes {
+    display: flex;
+    flex-direction: column;
+  }
+  #embarcaciones {
+    display: flex;
+    flex-direction: column;
+  }
+  #embarcaciones {
+    margin-left: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+      'pEmbarcaciones1 . '
+      'imgEmbarcaciones1 . '
+      'pEmbarcaciones2 . '
+      'imgEmbarcaciones2 . '
+      'pEmbarcaciones3 . '
+      'imgEmbarcaciones3 .';
+  }
+  .pEmbarcaciones1 {
+    grid-area: pEmbarcaciones1;
+    width: 300px;
+    margin-left: 10px;
+  }
+  .imgEmbarcaciones1 {
+    grid-area: imgEmbarcaciones1;
+    margin-left: 10px;
+  }
+  .imgEmbarcaciones2 {
+    grid-area: imgEmbarcaciones2;
+    margin-left: 10px;
+  }
+  .pEmbarcaciones2 {
+    grid-area: pEmbarcaciones2;
+    margin-left: 10px;
+    width: 300px;
+  }
+
+  .imgEmbarcaciones3 {
+    grid-area: imgEmbarcaciones3;
+    margin-left: 10px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .pEmbarcaciones3 {
+    grid-area: pEmbarcaciones3;
+    margin-left: 10px;
+    width: 300px;
+  }
+  .botonEmb {
+    border-radius: 30px;
+    border-color: rgb(255, 149, 0);
+    margin-left: 25%;
+    margin-bottom: 100px;
+  }
+}
