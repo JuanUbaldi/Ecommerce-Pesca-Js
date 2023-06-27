@@ -33,6 +33,21 @@
   font-size: large;
 }
 
+#products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#carts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.tarjetas {
+  width: 30%;
+  margin: 10px;
+}
+
 .pescadosMariscos {
   margin: 100px;
   display: inline;
@@ -263,8 +278,8 @@
   display: flex;
 }
 
-@media screen and (max-width: 480px) and (min-width: 1px) {
-  .timon{
+@media screen and (max-width: 600px) and (min-width: 1px) {
+  .timon {
     margin-left: 40%;
   }
   .lista {
@@ -276,6 +291,13 @@
     display: block;
     text-align: center;
   }
+  #products {
+    margin-left: 10%;
+  }
+  .tarjetas {
+    width: 40%;
+  }
+
   .presentacion {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -369,6 +391,13 @@
   .berberechosIngredientes {
     display: flex;
     flex-direction: column;
+  }
+  .langostinosHorno,
+  .cremaMariscos,
+  .imgBerberechos {
+    width: 100%;
+
+    margin-left: 0px;
   }
   #embarcaciones {
     display: flex;
